@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1= title
+  p #{title}
+
+  script.
+    var something = function() {
+      const xhr=
+      console.log('something')
+    }
+
+  button(onclick='something()') GetRefresh
+  button(onclick='something()') GetAuthInfo
