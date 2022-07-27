@@ -7,9 +7,8 @@ const { executeSQLquery } = require('../sqltest');
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  res.send('respond with a resource!!?');
+  res.json(req.cookies);
 });
-
 
 /* GET home page. */
 router.get('/sqltest', function(req, res, next) {
